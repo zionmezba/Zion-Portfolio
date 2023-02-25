@@ -4,7 +4,7 @@
 <head>
     <link rel="stylesheet" href="css\index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="js/index.js"></script>
     <title>Portfolio | Home</title>
     <style
         data-href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
@@ -106,119 +106,93 @@
             </div>
         </div>
         <!-- Done -->
+        <script>
+            const myElement = document.querySelector('.dodo_progress');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        myElement.classList.add('visible');
+                    } else {
+                        myElement.classList.remove('visible');
+                    }
+                });
+            });
+            observer.observe(myElement);
+        </script>
         <div class="zion_section" id="skills">
             <div class="zion_skills">
                 <div class="container">
                     <div class="zion_main_title" data-align="center"><span>Works & Skills</span>
-                        <h3>My Amazing Works</h3>
-                        <p>Most common methods for designing websites that work well on desktop is responsive and
-                            adaptive design</p>
+                        <h3>I Develop Skills Regularly to Keep Me Update</h3>
+                        <p>Eat Code Sleep</p>
                     </div>
-                    <div class="portfolio_filter">
-                        <ul>
-                            <li><a class="c-pointer current">All</a></li>
-                            <li><a class="c-pointer ">Youtube</a></li>
-                            <li><a class="c-pointer ">Vimeo</a></li>
-                            <li><a class="c-pointer ">Soundcloud</a></li>
-                            <li><a class="c-pointer ">Popup</a></li>
-                            <li><a class="c-pointer  ">Detail</a></li>
-                        </ul>
-                    </div>
-                    <div class="dizme_tm_portfolio_titles" style="left: 240px; top: 403px;">Scott Felix<span
-                            class="work__cat">Popup</span></div>
-                    <div class="portfolio_list wow fadeInUp" data-wow-duration="1s"
-                        style="visibility: visible; animation-duration: 1s;">
-                        <ul class="gallery_zoom grid" style="position: relative; height: 110px;">
-                            <li class="youtube grid-item" style="position: absolute; left: 0%; top: 0px;">
-                                <div class="inner">
-                                    <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Mockup Shape"
-                                        data-category="Youtube"><a class="popup-youtube"
-                                            href="https://www.youtube.com/embed/7e90gBu4pas?autoplay=1"><img
-                                                src="img/thumbs/42-56.jpg" alt="image">
-                                            <div class="main" data-img-url="img/portfolio/1.jpg"
-                                                style="background-image: url(&quot;img/portfolio/1.jpg&quot;);"></div>
-                                        </a></div>
-                                    <div class="mobile_title">
-                                        <h3>Mockup Shape</h3><span>Youtube</span>
+                    <div class="wrapper">
+                        <div class="left">
+                            <div class="dodo_progress wow fadeInUp" data-wow-duration="1s"
+                                style="visibility: visible; animation-duration: 1s;">
+
+                                <div class="progress_inner skillsInner___" data-value="85"
+                                    data-color="rgb(247, 80, 35)"><span><span class="label opened">C++</span><span
+                                            class="number" style="right: 15%;">90%</span></span>
+                                    <div class="background">
+                                        <div class="bar open">
+                                            <div class="bar_in" style="width: 85%; background-color: rgb(247, 80, 35);">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="vimeo grid-item" style="position: absolute; left: 33.3329%; top: 0px;">
-                                <div class="inner">
-                                    <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Ave Bottle"
-                                        data-category="Vimeo"><a class="popup-vimeo"
-                                            href="https://player.vimeo.com/video/337293658?autoplay=1"><img
-                                                src="img/thumbs/42-34.jpg" alt="image">
-                                            <div class="main" data-img-url="img/portfolio/2.jpg"
-                                                style="background-image: url(&quot;img/portfolio/2.jpg&quot;);"></div>
-                                        </a></div>
-                                    <div class="mobile_title">
-                                        <h3>Ave Bottle</h3><span>Vimeo</span>
+
+                                <div class="progress_inner skillsInner___" data-value="95"
+                                    data-color="rgb(28, 190, 89)"><span><span class="label opened">C
+                                        </span><span class="number" style="right: 5%;">85%</span></span>
+                                    <div class="background">
+                                        <div class="bar open">
+                                            <div class="bar_in" style="width: 95%; background-color: rgb(28, 190, 89);">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="soundcloud grid-item" style="position: absolute; left: 66.6658%; top: 0px;">
-                                <div class="inner">
-                                    <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Magic Art"
-                                        data-category="Soundcloud"><a class="soundcloude_link mfp-iframe audio"
-                                            href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/471954807&amp;color=%23ff5500&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true&amp;visual=true"><img
-                                                src="img/thumbs/42-56.jpg" alt="image">
-                                            <div class="main" data-img-url="img/portfolio/3.jpg"
-                                                style="background-image: url(&quot;img/portfolio/3.jpg&quot;);"></div>
-                                        </a></div>
-                                    <div class="mobile_title">
-                                        <h3>Magic Art</h3><span>Soundcloud</span>
+
+                                <div class="progress_inner skillsInner___" data-value="95"
+                                    data-color="rgb(28, 190, 89)"><span><span class="label opened">Java
+                                        </span><span class="number" style="right: 5%;">75%</span></span>
+                                    <div class="background">
+                                        <div class="bar open">
+                                            <div class="bar_in"
+                                                style="width: 95%; background-color: rgb(166, 28, 190);">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="popup grid-item" style="position: absolute; left: 0%; top: 55px;">
-                                <div class="inner">
-                                    <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Scott Felix"
-                                        data-category="Popup"><a class="zoom" href="img/portfolio/5.jpg"><img
-                                                src="img/thumbs/42-56.jpg" alt="image">
-                                            <div class="main" data-img-url="img/portfolio/5.jpg"
-                                                style="background-image: url(&quot;img/portfolio/5.jpg&quot;);"></div>
-                                        </a></div>
-                                    <div class="mobile_title">
-                                        <h3>Blue Lemon</h3><span>Popup</span>
+
+                                <div class="progress_inner skillsInner___" data-value="95"
+                                    data-color="rgb(28, 190, 89)"><span><span class="label opened">Python
+                                        </span><span class="number" style="right: 5%;">90%</span></span>
+                                    <div class="background">
+                                        <div class="bar open">
+                                            <div class="bar_in" style="width: 95%; background-color: rgb(227, 57, 51);">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="popup grid-item" style="position: absolute; left: 33.3329%; top: 55px;">
-                                <div class="inner">
-                                    <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Art Stone"
-                                        data-category="Popup"><a class="zoom" href="img/portfolio/4.jpg"><img
-                                                src="img/thumbs/42-34.jpg" alt="image">
-                                            <div class="main" data-img-url="img/portfolio/4.jpg"
-                                                style="background-image: url(&quot;img/portfolio/4.jpg&quot;);"></div>
-                                        </a></div>
-                                    <div class="mobile_title">
-                                        <h3>Art Stone</h3><span>Popup</span>
+
+                                <div class="progress_inner skillsInner___" data-value="95"
+                                    data-color="rgb(28, 190, 89)"><span><span class="label opened">MS Office
+                                        </span><span class="number" style="right: 5%;">95%</span></span>
+                                    <div class="background">
+                                        <div class="bar open">
+                                            <div class="bar_in" style="width: 95%; background-color: rgb(28, 190, 89);">
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="detail grid-item" style="position: absolute; left: 66.6658%; top: 55px;">
-                                <div class="inner">
-                                    <div class="entry dizme_tm_portfolio_animation_wrap" data-title="Global Evolution"
-                                        data-category="Detail"><a class="portfolio_popup" href="#"><img
-                                                src="img/thumbs/42-34.jpg" alt="image">
-                                            <div class="main" data-img-url="img/portfolio/6.jpg"
-                                                style="background-image: url(&quot;img/portfolio/6.jpg&quot;);"></div>
-                                        </a></div>
-                                    <div class="mobile_title">
-                                        <h3>Global Evolution</h3><span>Detail</span>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <img src="./images/Avatar(1).png" alt="image">
+                        </div>
                     </div>
                 </div>
-                <div class="brush_1 wow zoomIn" data-wow-duration="1s"
-                    style="visibility: visible; animation-duration: 1s;"><img src="img/brushes/portfolio/1.png"
-                        alt="image"></div>
-                <div class="brush_2 wow fadeInRight" data-wow-duration="1s"
-                    style="visibility: visible; animation-duration: 1s;"><img src="img/brushes/portfolio/2.png"
-                        alt="image"></div>
             </div>
         </div>
 
