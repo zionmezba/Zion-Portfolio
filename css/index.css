@@ -1,0 +1,689 @@
+@font-face {
+    font-family: swiper-icons;
+    src: url("data:application/font-woff;charset=utf-8;base64, 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");
+    font-weight: 400;
+    font-style: normal
+}
+
+body::-webkit-scrollbar {
+    width: 11px
+}
+
+body,
+html {
+    overflow-x: hidden
+}
+
+body {
+    background-color: #2b2d33;
+    color: #b9b5c9;
+    scrollbar-width: thin;
+    scrollbar-color: #777 #2b2d33;
+    width: 100%;
+    font-family: Open Sans, sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0;
+    word-wrap: break-word;
+    font-weight: 400;
+}
+
+body:-webkit-scrollbar-track {
+    background: #2b2d33
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #777;
+    border-radius: 6px;
+    border: 3px solid #2b2d33
+}
+
+p {
+    color: #b9b5c9;
+}
+
+.zion_wrapper {
+    width: 100%;
+    height: 1000px;
+    /* background-color: rgb(53,53,67); */
+    clear: both;
+    float: left;
+    position: relative;
+}
+
+.zion_wrapper,
+.zion_wrapper * {
+    box-sizing: border-box
+}
+
+.zion_header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 2px 0;
+    transition: all .3s ease;
+}
+
+.container {
+    max-width: 1400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    padding-left: 60px;
+    padding-right: 60px;
+    /* padding: 0 40px; */
+    position: relative;
+    clear: both
+}
+
+.zion_header .inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.zion_header.animate {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1)
+}
+
+.zion_header .logo img {
+    max-width: 150px;
+    max-height: 80px;
+    float: left;
+}
+
+.zion_header .menu ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center
+}
+
+.zion_header .menu ul li {
+    margin: 0 48px 0 0;
+    display: inline-block
+}
+
+.zion_header .menu ul li:last-child {
+    margin-right: 0
+}
+
+.zion_header .menu ul li.current a,
+.zion_header .menu ul li a:hover {
+    color: #f75023
+}
+
+.zion_header .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: Jost, sans-serif;
+    transition: all .3s ease
+}
+
+
+.zion_header .download_cv {
+    position: relative;
+    top: 3px
+}
+
+.zion_header .download_cv a {
+    border: 2px solid #f75023;
+    border-radius: 50px;
+    padding: 8px 35px 7px;
+    position: relative;
+    overflow: hidden;
+    display: inline-block
+}
+
+.zion_header .download_cv span {
+    position: relative;
+    z-index: 2;
+    transition: all .3s ease
+}
+
+.zion_header .download_cv a:before {
+    position: absolute;
+    content: "";
+    z-index: 0;
+    background-color: #f75023;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    height: 0;
+    transition: all .3s ease
+}
+
+.zion_header .download_cv a:hover:before {
+    height: 115%
+}
+
+.zion_header .download_cv a:hover span {
+    color: #fff
+}
+
+/* done */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    line-height: 1.3;
+    font-family: Jost, sans-serif;
+    color: #ffffff
+}
+
+.zion_home {
+    width: 100%;
+    height: 100vh;
+    clear: both;
+    float: left;
+    position: relative;
+    margin-bottom: 190px;
+}
+
+.zion_home_background {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: 10%;
+    background-image: url(https://dizme.vercel.app/img/slider/2.jpg);
+    background-size: cover;
+}
+
+.zion_home_background .container {
+    /* padding-top: 10%; */
+    height: 100%;
+}
+
+.zion_home_background .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.zion_home_background .details {
+    width: 50%;
+    padding-right: 20px
+}
+
+.hello h3 {
+    font-size: 40px;
+    color: #f75023;
+    font-weight: 600;
+}
+
+.zion_home_background .name {
+    margin-bottom: 18px;
+}
+
+.zion_home_background .name h3 {
+    font-size: 55px;
+    font-weight: 900;
+}
+
+.zion_home_background .job {
+    margin-bottom: 35px;
+}
+
+.zion_home_background .job p {
+    font-size: 28px;
+    color: #000;
+    font-weight: 500
+}
+
+.zion_home_background .text {
+    margin-bottom: 42px
+}
+
+.zion_home_background .text p {
+    font-size: 23px;
+    line-height: 1.5
+}
+
+.zion_home_background .button {
+    display: flex;
+    align-items: center
+}
+
+.zion_home_background .zion_button {
+    width: auto
+}
+
+.zion_button {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left
+}
+
+.zion_button a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-family: Jost, sans-serif;
+    font-weight: 500;
+    border-radius: 50px;
+    border: 2px solid #f75023;
+    padding: 14px 48px 13px;
+    position: relative;
+    overflow: hidden
+}
+
+.zion_button span {
+    position: relative;
+    z-index: 2;
+    transition: all .3s ease
+}
+
+.zion_button a:before {
+    position: absolute;
+    content: "";
+    z-index: 0;
+    background-color: #f75023;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    height: 110%;
+    transition: all .3s ease
+}
+
+.zion_button a:hover:before {
+    height: 0
+}
+
+.zion_button a:hover span {
+    color: #000
+}
+
+.zion_home_background .social {
+    padding-left: 27px;
+    position: relative;
+    top: -4px
+}
+
+.zion_home_background .social ul {
+    margin: 0;
+    list-style-type: none
+}
+
+.zion_home_background .social ul li {
+    margin: 0 5px 0 0;
+    display: inline-block
+}
+
+.zion_home_background .social ul li:last-child {
+    margin-right: 0
+}
+
+.zion_home_background .social ul li a {
+    text-decoration: none;
+    color: #000
+}
+
+.zion_home_background .image {
+    position: relative
+}
+
+.zion_home_background .avatar {
+    width: 50%;
+    padding-left: 100px
+}
+
+.zion_home_background .avatar img {
+    max-height: 650px
+}
+
+.zion_home_background .skills {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 8px;
+    position: absolute;
+    box-shadow: 24px 0 72px rgba(54, 32, 152, .3)
+}
+
+.zion_home_background .skills.cpp {
+    top: 30px;
+    left: 30px
+}
+
+.zion_home_background .skills.java {
+    bottom: 50px;
+    left: 20px
+}
+
+.zion_home_background .skills.python {
+    bottom: 90px;
+    left: 390px
+}
+
+.zion_home_background .skills.leetcode {
+    right: 70px;
+    top: 150px
+}
+
+.zion_scroll_down {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 60px;
+    z-index: 5
+}
+
+.dizme_tm_down svg #wheel {
+    -webkit-animation: scroll 2s ease infinite;
+    animation: scroll 2s ease infinite
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0)
+    }
+
+    30% {
+        transform: translateY(60px)
+    }
+}
+
+.animPulse {
+    -webkit-animation: animPulse 3s linear 0s infinite alternate;
+    animation: animPulse 3s linear 0s infinite alternate
+}
+
+@keyframes animPulse {
+    0% {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.2)
+    }
+}
+
+.anim_moveLeft {
+    -webkit-animation: animMoveLeft 3s linear 0s infinite alternate;
+    animation: animMoveLeft 3s linear 0s infinite alternate
+}
+
+@keyframes animMoveLeft {
+    0% {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(-20px)
+    }
+}
+
+.anim_moveRight {
+    -webkit-animation: anim_moveRight 3s linear 0s infinite alternate;
+    animation: anim_moveRight 3s linear 0s infinite alternate
+}
+
+@keyframes anim_moveRight {
+    0% {
+        transform: translateX(0)
+    }
+
+    to {
+        transform: translateX(20px)
+    }
+}
+
+.anim_moveTop {
+    -webkit-animation: anim_moveTop 3s linear 0s infinite alternate;
+    animation: anim_moveTop 3s linear 0s infinite alternate
+}
+
+@keyframes anim_moveTop {
+    0% {
+        transform: translateY(0)
+    }
+
+    to {
+        transform: translateY(-20px)
+    }
+}
+
+.anim_moveBottom {
+    -webkit-animation: anim_moveBottom 3s linear 0s infinite alternate;
+    animation: anim_moveBottom 3s linear 0s infinite alternate
+}
+
+@keyframes anim_moveBottom {
+    0% {
+        transform: translateY(0)
+    }
+
+    to {
+        transform: translateY(50px)
+    }
+}
+
+.fa-facebook-f,
+.fa-linkedin,
+.fa-instagram,
+.fa-github {
+    color: white;
+}
+
+.progressbar {
+    position: fixed;
+    height: 100px;
+    width: 1px;
+    bottom: 25px;
+    right: -25px;
+    background-color: rgba(255, 255, 255, 0.08);
+    z-index: 10;
+    transition: all .3s ease
+}
+
+.progressbar.animate {
+    right: 25px
+}
+
+.progressbar .line {
+    position: absolute;
+    width: 1px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.4)
+}
+
+.progressbar .text {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    font-size: 13px;
+    transform: rotate(90deg);
+    text-transform: uppercase;
+    transform-origin: left;
+    white-space: nowrap
+}
+
+.progressbar a {
+    text-decoration: none;
+    color: #ffffff
+}
+/* done */
+
+.zion_section {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left
+}
+
+.zion_skills {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    padding-top: 100px;
+    margin-bottom: 165px;
+    position: relative
+}
+
+.zion_skills .portfolio_filter {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    text-align: center;
+    padding: 78px 0 56px
+}
+
+.zion_skills .portfolio_filter ul {
+    margin: 0;
+    list-style-type: none
+}
+
+.zion_skills .portfolio_filter ul li {
+    margin: 0 50px 0 0;
+    display: inline-block
+}
+
+.zion_skills .portfolio_filter ul li:last-child {
+    margin-right: 0
+}
+
+.zion_skills .portfolio_filter ul li a {
+    text-decoration: none;
+    color: #000;
+    font-family: Jost, sans-serif;
+    font-weight: 500;
+    transition: all .3s ease
+}
+
+.zion_skills .portfolio_filter ul li a.current,
+.zion_skills .portfolio_filter ul li a:hover {
+    color: #f75023
+}
+
+.zion_skills .portfolio_list {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left
+}
+
+.zion_skills .portfolio_list ul {
+    margin: 0 0 0 -25px;
+    list-style-type: none;
+    position: relative;
+    z-index: 2
+}
+
+.zion_skills .portfolio_list ul li {
+    margin: 0 0 25px;
+    width: 33.3333%;
+    float: left;
+    padding-left: 25px
+}
+
+.zion_skills .portfolio_list ul li .inner {
+    width: 100%;
+    height: auto;
+    clear: both;
+    float: left;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px
+}
+
+.zion_skills .portfolio_list .image {
+    position: relative;
+    overflow: hidden
+}
+
+.zion_skills .portfolio_list .inner img {
+    min-width: 100%;
+    opacity: 0
+}
+
+.zion_skills .portfolio_list .main {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    transform: scale(1) translateZ(0);
+    transition: all .3s ease-in-out
+}
+
+.zion_skills .portfolio_list ul li .inner:hover .main {
+    transform: scale(1.1) translateZ(0)
+}
+
+.zion_skills_titles {
+    white-space: nowrap;
+    background: #fff;
+    font-size: 21px;
+    padding: 7px 15px;
+    font-family: Jost, sans-serif;
+    font-weight: 500;
+    color: #000;
+    position: fixed;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden
+}
+
+.zion_skills_titles.visible {
+    opacity: 1;
+    visibility: visible
+}
+
+.zion_skills_titles .work__cat {
+    position: absolute;
+    background: #fff;
+    top: 100%;
+    left: 0;
+    margin-top: -10px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 15px;
+    color: #6f6b80
+}
+
+.zion_main_title {
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+    clear: both;
+    text-align: center;
+    margin: 0 auto
+}
+
+.dizme_tm_main_title[data-align=center] {
+    text-align: center;
+    margin: 0 auto
+}
+
+.zion_main_title span {
+    font-size: 22px;
+    font-weight: 500;
+    color: orangered;
+}
+
+.zion_main_title h3 {
+    font-size: 38px;
+    margin-bottom: 16px
+}
