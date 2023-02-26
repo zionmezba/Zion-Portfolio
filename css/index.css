@@ -806,7 +806,57 @@ h6 {
     padding-left: 100px
 }
 
-.zion_skills .right img {
-    max-height: 400px
+.zion_skills .right .image {
+    position: relative
 }
 
+.image img {
+    max-height: 500px
+}
+
+
+.zion_skills .numbers {
+    position: absolute
+}
+
+.zion_skills .numbers.year {
+    top: 120px;
+    left: -80px
+}
+
+.zion_skills .numbers.project {
+    bottom: 70px;
+    right: -20px
+}
+
+.zion_skills .numbers .wrapper {
+    display: flex;
+    height: 90px;
+    align-items: center;
+    background-color: #4b4f5c;
+    box-shadow: 25px 0 65px rgba(54, 32, 152, .11);
+    border-radius: 8px;
+    padding: 34px 40px 31px 36px
+}
+
+.zion_skills .numbers.project .wrapper {
+    padding: 14px 30px 11px 26px
+}
+
+.zion_skills .numbers .wrapper h3 {
+    font-size: 60px;
+    color: #1cbe59
+}
+
+.zion_skills .numbers.project h3 {
+    color: #6e50f0
+}
+
+.zion_skills .numbers .wrapper .name {
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: Jost, sans-serif;
+    line-height: 1.3;
+    padding-left: 17px
+}
