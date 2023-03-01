@@ -5,14 +5,6 @@
     <link rel="stylesheet" href="css\index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="js\index.js"></script>
-    <script>
-        function func(name) {
-            document.getElementById(name).style.color = "black";
-            // document.getElementsByClassName("menu").style.color = "white";
-            const myList = document.querySelector('a');
-            myList.style.color = 'white';
-        }
-    </script>
     <title>Portfolio | Home</title>
     <style
         data-href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
@@ -37,11 +29,10 @@
                     </div>
                     <div class="menu">
                         <ul class="anchor_nav">
-                            <li class="current"><a href="#home" id="home1" onclick="func(id)">Home</a></li>
-                            <li><a href="#skills" id="skill1" onclick="func(id)">Skills</a></li>
-                            <li><a href="#portfolio" id="port1" onclick="func(id)">Portfolio</a></li>
-                            <li><a href="#contact" id="cont1" onclick="func(id)">Contact</a></li>
-                            <li class="download_cv"><a href="img/cv/1.jpg" download=""><span>Download CV</span></a>
+                            <li class="current"><a href="#home" id="change1">Home</a></li>
+                            <li><a href="#skills" id="change2">Skills</a></li>
+                            <li><a href="#contact" id="change3">Contact</a></li>
+                            <li class="download_cv"><a href="images/cv.pdf" download=""><span>Download CV</span></a>
                             </li>
                         </ul>
                     </div>
@@ -86,7 +77,8 @@
                             </div>
                         </div>
                         <div class="avatar">
-                            <div class="image"><img src="./images/Avatar6.png" alt="image">
+                            <div class="image">
+                                <img src="./images/Avatar6.png" alt="image" class="avtrim">
                                 <span class="skills cpp anim_moveBottom">
                                     <img src="./images/cpp.png" height="100px"></span>
                                 <span class="skills java  anim_moveTop">
@@ -125,9 +117,9 @@
                             <div class="dodo_progress wow fadeInUp" data-wow-duration="1s"
                                 style="visibility: visible; animation-duration: 1s;">
 
-                                <div class="progress_inner skillsInner___" data-value="90"
-                                    data-color="rgb(247, 80, 35)"><span><span class="label opened">C++</span><span
-                                            class="number" style="right: 5%;">90%</span></span>
+                                <div class="progress_inner" data-value="90" data-color="rgb(247, 80, 35)"><span><span
+                                            class="label opened">C++</span><span class="number"
+                                            style="right: 5%;">90%</span></span>
                                     <div class="background">
                                         <div class="bar open">
                                             <div class="bar_in" style="width: 90%; background-color: rgb(247, 80, 35);">
@@ -136,8 +128,8 @@
                                     </div>
                                 </div>
 
-                                <div class="progress_inner skillsInner___" data-value="85"
-                                    data-color="rgb(28, 190, 89)"><span><span class="label opened">C
+                                <div class="progress_inner" data-value="85" data-color="rgb(28, 190, 89)"><span><span
+                                            class="label opened">C
                                         </span><span class="number" style="right: 5%;">85%</span></span>
                                     <div class="background">
                                         <div class="bar open">
@@ -147,8 +139,8 @@
                                     </div>
                                 </div>
 
-                                <div class="progress_inner skillsInner___" data-value="75"
-                                    data-color="rgb(28, 190, 89)"><span><span class="label opened">Java
+                                <div class="progress_inner" data-value="75" data-color="rgb(28, 190, 89)"><span><span
+                                            class="label opened">Java
                                         </span><span class="number" style="right: 5%;">75%</span></span>
                                     <div class="background">
                                         <div class="bar open">
@@ -159,8 +151,8 @@
                                     </div>
                                 </div>
 
-                                <div class="progress_inner skillsInner___" data-value="90"
-                                    data-color="rgb(28, 190, 89)"><span><span class="label opened">Python
+                                <div class="progress_inner" data-value="90" data-color="rgb(28, 190, 89)"><span><span
+                                            class="label opened">Python
                                         </span><span class="number" style="right: 5%;">90%</span></span>
                                     <div class="background">
                                         <div class="bar open">
@@ -170,8 +162,8 @@
                                     </div>
                                 </div>
 
-                                <div class="progress_inner skillsInner___" data-value="95"
-                                    data-color="rgb(28, 190, 89)"><span><span class="label opened">MS Office
+                                <div class="progress_inner" data-value="95" data-color="rgb(28, 190, 89)"><span><span
+                                            class="label opened">MS Office
                                         </span><span class="number" style="right: 5%;">95%</span></span>
                                     <div class="background">
                                         <div class="bar open">
@@ -182,102 +174,122 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="right" style="padding-left: 100px; padding-right: 10px;">
-                            <div class="image"><img src="./images/Avatar7.png" alt="image">
-                                <div class="numbers year">
-                                    <div class="wrapper">
-                                        <h3><span class="count-text" data-from="0" data-to="3">3</span></h3><span
-                                            class="name">Years of<br>Experience</span>
-                                    </div>
-                                </div>
-                                <div class="numbers project">
-                                    <div class="wrapper">
-                                        <h3><span class="count-text" data-from="0" data-to="15">15</span>+</h3><span
-                                            class="name">Total<br>Projects</span>
-                                    </div>
+                        <!-- Done -->
+
+                        <div class="right" style="padding-left: 10px; padding-right: 10px;">
+                            <div class="images"><img src="./images/bgm.png" alt="shape" class="shape">
+                                <img src="./images/avatar.png" alt="image" class="avtr">
+                            </div>
+                            <div class="numbers problem">
+                                <div class="wrapper" style="width: fit-content;">
+                                    <h3 style="font-size: 45px; font-weight: 500;"><span class="count-text"
+                                            data-from="0" data-to="300">300+</span></h3><span
+                                        class="name">Problems<br>Solved</span>
                                 </div>
                             </div>
+                            <div class="numbers project">
+                                <div class="wrapper">
+                                    <h3><span class="count-text" data-from="0" data-to="15">15</span>+</h3><span
+                                        class="name">Total<br>Projects</span>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-<!-- Done  -->
-        <div class="zion_section" id="contact">
-            <div class="zion_skills">
+            <!-- Done  -->
+            <div class="zion_section" id="contact">
+                <div class="zion_skills">
+                    <div class="container">
+                        <div class="zion_main_title" data-align="center"><span>Contact Me</span>
+                            <h3>I Want To Hear From You</h3>
+                            <p>Please fill out the form on this section to contact with me. Or call between 9:00 a.m.
+                                and 8:00 p.m. ET, Monday through Friday</p>
+                        </div>
+                        <div class="wrapper" style="padding-top: 20px;">
+                            <div class="left">
+                                <ul>
+                                    <li>
+                                        <div class="list_inner">
+                                            <div class="icon orangeBackground"><i class="fa fa-map-marker"></i>
+                                            </div>
+                                            <div class="short">
+                                                <h3>Address</h3><span>Dhaka, Bangladesh</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_inner">
+                                            <div class="icon greenBackground"><i class="fa fa-envelope"></i>
+                                            </div>
+                                            <div class="short">
+                                                <h3>Email</h3><span><a
+                                                        href="https://dizme.vercel.app/index-dark#">mezbazion@gmail.com</a></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="list_inner">
+                                            <div class="icon purpleBackground"><i class="fa fa-phone"></i>
+                                            </div>
+                                            <div class="short">
+                                                <h3>Phone</h3><span>+8801750458479</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <form action="#" method="post" class="contact_form" id="contact_form"
+                                    autocomplete="off">
+                                    <div class="input_list">
+                                        <ul style="padding-left: 10px;">
+                                            <li style="padding-right: 10px;"><input type="text" id="name"
+                                                    placeholder="Your Name"></li>
+                                            <li><input type="text" id="email" placeholder="Your Email"></li>
+                                            <li style="padding-right: 10px;"><input type="number" id="phone"
+                                                    placeholder="Your Phone"></li>
+                                            <li><input type="text" id="subject" placeholder="Subject"></li>
+                                        </ul>
+                                    </div>
+                                    <div class="message_area"><textarea id="message"
+                                            placeholder="Write your message here"></textarea></div>
+                                    <div class="zion_button" style="width: 200px;"><a id="send_message"
+                                            href="#"><span>Submit Now</span></a>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <div class="zion_map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14594.21075523273!2d90.3277921!3d23.870012699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8ada2664e21%3A0x3c872fd17bc11ddb!2sDaffodil%20International%20University!5e0!3m2!1sen!2sbd!4v1677512120789!5m2!1sen!2sbd"
+                                width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen=""
+                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Progressbar -->
+                <div class="progressbar animate"><a href="#home" id="scroll-top" class="active"><span class="text"
+                            style="bottom:150.75px">To Top</span></a><span class="line"
+                        style="height: 4.16454%;"></span>
+                </div>
+            </div>
+            <!-- Site footer -->
+            <footer class="site-footer">
                 <div class="container">
-                    <div class="zion_main_title" data-align="center"><span>Contact Me</span>
-                        <h3>I Want To Hear From You</h3>
-                        <p>Please fill out the form on this section to contact with me. Or call between 9:00 a.m.
-                            and 8:00 p.m. ET, Monday through Friday</p>
-                    </div>
-                    <div class="wrapper" style="padding-top: 20px;">
-                        <div class="left">
-                            <ul>
-                                <li>
-                                    <div class="list_inner">
-                                        <div class="icon orangeBackground"><i class="fa fa-map-marker"></i>
-                                        </div>
-                                        <div class="short">
-                                            <h3>Address</h3><span>Dhaka, Bangladesh</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list_inner">
-                                        <div class="icon greenBackground"><i class="fa fa-envelope"></i>
-                                        </div>
-                                        <div class="short">
-                                            <h3>Email</h3><span><a
-                                                    href="https://dizme.vercel.app/index-dark#">mezbazion@gmail.com</a></span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="list_inner">
-                                        <div class="icon purpleBackground"><i class="fa fa-phone"></i>
-                                        </div>
-                                        <div class="short">
-                                            <h3>Phone</h3><span>+8801750458479</span>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="right">
-                            <form action="#" method="post" class="contact_form" id="contact_form" autocomplete="off">
-                                <div class="input_list">
-                                    <ul style="padding-left: 10px;">
-                                        <li style="padding-right: 10px;"><input type="text" id="name"
-                                                placeholder="Your Name"></li>
-                                        <li><input type="text" id="email" placeholder="Your Email"></li>
-                                        <li style="padding-right: 10px;"><input type="number" id="phone"
-                                                placeholder="Your Phone"></li>
-                                        <li><input type="text" id="subject" placeholder="Subject"></li>
-                                    </ul>
-                                </div>
-                                <div class="message_area"><textarea id="message"
-                                        placeholder="Write your message here"></textarea></div>
-                                <div class="zion_button"><a id="send_message" href="#"><span>Submit Now</span></a>
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-                    <div class="zion_map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14594.21075523273!2d90.3277921!3d23.870012699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8ada2664e21%3A0x3c872fd17bc11ddb!2sDaffodil%20International%20University!5e0!3m2!1sen!2sbd!4v1677512120789!5m2!1sen!2sbd"
-                            width="100%" height="450" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Progressbar -->
-            <div class="progressbar animate"><a href="#home" id="scroll-top" class="active"><span class="text"
-                        style="bottom:150.75px">To Top</span></a><span class="line" style="height: 4.16454%;"></span>
-            </div>
-        </div>
+                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                        <a href="#">ZiON</a>.
+                    </p>
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-github"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+            </footer>
 </body>
+
 
 </html>
