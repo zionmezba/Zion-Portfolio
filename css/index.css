@@ -1061,9 +1061,13 @@ input[type=number] {
 .zion_map {
     width: 100%;
     padding-top: 50px;
-    float: left
+    float: left;
+
 }
 
+.zion_map iframe{
+    filter: invert(1);
+}
 
 
 .site-footer {
