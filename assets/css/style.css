@@ -7,7 +7,7 @@
       hsla(240, 2%, 11%, 0) 100%), hsl(240, 2%, 13%);
   --bg-gradient-yellow-1: linear-gradient(to bottom right,
       hsl(45, 100%, 71%) 0%,
-      hsla(36, 100%, 69%, 0) 50%);
+      hsla(36, 100%, 69%, 0) 50%)Laravel;
   --bg-gradient-yellow-2: linear-gradient(135deg,
       hsla(45, 100%, 71%, 0.251) 0%,
       hsla(35, 100%, 68%, 0) 59.86%), hsl(240, 2%, 13%);
