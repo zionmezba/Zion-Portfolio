@@ -2104,15 +2104,16 @@ textarea.form-input::-webkit-resizer {
 
 
 .portfolio-link {
-    color: #f75023;
+    color: #fdce68;
     border-radius: 10px;
-    padding: 20px;
+    padding: 5px;
     transition-duration: 1s;
 }
 
 .portfolio-link:hover {
-    background-color: #f75023;
-    color: white;
+    background-color: #ffd300;
+    padding: 10px;
+    color: black;
 }
 
 .solar--programming-broken {
