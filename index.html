@@ -1,318 +1,285 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <link rel="stylesheet" href="css\index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="./assets/images/logo1.png" type="image/x-icon">
-    <script src="js\index.js"></script>
-    <title>Portfolio | Home</title>
-    <style
-        data-href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap">
-        @font-face {
-            font-family: 'Jost';
-            font-style: normal;
-            font-weight: 500;
-            font-display: swap;
-            src: url(https://fonts.gstatic.com/s/jost/v13/92zatBhPNqw73oTd4jQmfxI.woff2) format('woff2');
-            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZiON - Personal Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/aos.css" />
+
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- logo -->
+  <link rel="shortcut icon" href="./assets/images/logo-1.svg" type="image/x-icon">
 </head>
 
 <body>
-    <div class="zion_wrapper">
-        <div class="zion_header">
-            <div class="container">
-                <div class="inner">
-                    <div class="logo">
-                        <img src="./assets/images/logo1.png" alt="">
-                    </div>
-                    <div class="menu">
-                        <ul class="anchor_nav">
-                            <li class="current active"><a href="#home" id="change1">Home</a></li>
-                            <li><a href="#skills" id="change2">Skills</a></li>
-                            <li><a href="#contact" id="change3">Contact</a></li>
-                            <li class="download_cv"><a href="cv/index.html"><span>View CV</span></a>
-                            </li>
-                            <!--                             <li class="download_cv"><a href="images/cv.pdf" download=""><span>Download CV</span></a>
-                            </li> -->
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <main class="main-homepage">
+    <!-- Header -->
+    <header class="header-area">
+      <div class="container">
+        <div class="gx-row d-flex align-items-center justify-content-between">
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo-2.svg" alt="Logo" />
+          </a>
+
+          <nav class="navbar">
+            <ul class="menu">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="works.html">Works</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <a href="./contact.html" class="theme-btn">Let's talk</a>
+          </nav>
+
+          <a href="./contact.html" class="theme-btn">Let's talk</a>
+
+          <div class="show-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
-        <!-- Done -->
-        <div class="zion_home" id="home">
-            <div class="zion_home_background">
-                <div class="container">
-                    <div class="content">
-                        <div class="details">
-                            <div class="hello">
-                                <h3>Hello, I'm</h3>
-                            </div>
-                            <div class="name">
-                                <h3>Md. Mezbaul Islam Zion</h3>
-                            </div>
-                            <div class="job">
-                                <p style="color: #ffffff;">A <span style="color:#1cbe59;">Programmer </span>From <span
-                                        style="color: #8067f0;">Dhaka, Bangladesh</span></p>
-                            </div>
-                            <div class="text">
-                                <p>I am a trailblazing Laravel developer, a Python powerhouse for machine learning and deep learning, and an Android app virtuoso. Armed with a relentless problem-solving drive, I craft innovative solutions that exceed expectations. My portfolio is a testament to my ability to turn tech challenges into triumphant successes.</p>
-                            </div>
-                            <div class="button">
-                                <div class="zion_button"><a class="anchor" href="cv/index.html"><span>View CV</span></a>
-                                </div>
-                                <div class="social">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/zion.mezba/"><i
-                                                    class="fa fa-facebook-f"></i></a></li>
-                                        <li><a href="https://www.linkedin.com/in/zion-mezba/"><i
-                                                    class="fa fa-linkedin"></i></a></li>
-                                        <li><a href="https://github.com/zionmezba/"><i class="fa fa-github"></i></a>
-                                        </li>
-                                        <li><a href="https://www.instagram.com/zion_mezba/"><i
-                                                    class="fa fa-instagram"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="avatar">
-                            <div class="image">
-                                <img src="./assets/images/Avatar6.png" alt="image" class="avtrim">
-                                <span class="skills cpp anim_moveBottom">
-                                    <img src="./assets/images/cpp.png" height="100px"></span>
-                                <span class="skills java  anim_moveTop">
-                                    <img src="./assets/images/java.png" height="100px">
-                                </span><span class="skills python  anim_moveLeft">
-                                    <img src="./assets/images/python.png" height="100px">
-                                </span><span class="skills laravel  anim_moveRight">
-                                    <img src="./assets/images/laravel.png" height="100px">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="zion_scroll_down"><a class="anchor" href="#skills"><svg width="26px" height="100%"
-                            viewBox="0 0 247 390" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink"
-                            style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5">
-                            <path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke:#fff;stroke-width:20">
-                            </path>
-                            <path id="mouse"
-                                d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
-                                style="fill:none;stroke:#fff;stroke-width:20"></path>
-                        </svg></a>
-                </div>
+      </div>
+    </header>
+
+    <!-- About -->
+    <section class="about-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" data-aos="zoom-in">
+            <div class="about-me-box shadow-box">
+              <a class="overlay-link" href="./about.html"></a>
+              <img src="./assets/images/bg1.png" alt="BG" class="bg-img" />
+              <div class="img-box">
+                <img src="./assets/images/me.jpeg" alt="About Me" />
+              </div>
+              <div class="infos">
+                <h4>APPLICATION DEVELOPER</h4>
+                <h1>Md. Mezbaul Islam Zion</h1>
+                <p>I am a Flutter & Laravel Developer</p>
+                <a href="#" class="about-btn">
+                  <img src="./assets/images/icon.svg" alt="Button" />
+                </a>
+              </div>
             </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-credentials-wrap">
+              <div data-aos="zoom-in">
+                <div class="banner shadow-box">
+                  <div class="marquee">
+                    <div>
+                      <span>LATEST WORK AND <b>FEATURED</b>
+                        <img src="./assets/images/star1.svg" alt="Star" />
+                        Z-Mart <b> An E-Commerce Application</b>
+                        <img src="./assets/images/star1.svg" alt="Star" />
+                        Riyotex <b> A Brand Shop</b>
+                        <img src="./assets/images/star1.svg" alt="Star" />
+                        Ayat & Insigts <b> An Islamic App</b>
+                        <img src="./assets/images/star1.svg" alt="Star" />
+                        World Time <b> A Reatime weather and time syncing app</b>
+                        <img src="./assets/images/star1.svg" alt="Star" />
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- More About -->
+              <div class="gx-row d-flex gap-24">
+                <div data-aos="zoom-in">
+                  <div class="about-crenditials-box info-box shadow-box h-full">
+                    <a class="overlay-link" href="./credentials.html"></a>
+                    <img src="./assets/images/bg1.png" alt="BG" class="bg-img" />
+                    <img src="./assets/images/signature2.png" alt="Sign" class="sign-img" />
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="infos">
+                        <h4>more about me</h4>
+                        <h1>Credentials</h1>
+                      </div>
+
+                      <a href="./credentials.html" class="about-btn">
+                        <img src="./assets/images/icon.svg" alt="Button" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- More About Ends -->
+
+                <!-- Project -->
+                <div data-aos="zoom-in">
+                  <div class="about-project-box info-box shadow-box h-full">
+                    <a class="overlay-link" href="./works.html"></a>
+                    <img src="./assets/images/bg1.png" alt="BG" class="bg-img" />
+                    <img src="./assets/images/project-banner.png" alt="My Works" />
+                    <div class="d-flex align-items-center justify-content-between">
+                      <div class="infos">
+                        <h4>SHOWCASE</h4>
+                        <h1>Projects</h1>
+                      </div>
+
+                      <a href="#" class="about-btn">
+                        <img src="./assets/images/icon.svg" alt="Button" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- Done -->
-        <div class="zion_section" id="skills">
-            <div class="zion_skills">
-                <div class="container">
-                    <div class="zion_main_title" data-align="center"><span>Works & Skills</span>
-                        <h3>I Develop Skills Regularly to Keep Me Update</h3>
+        <!-- Project Ends -->
+        <!-- Blog -->
+        <div hidden class="row mt-24">
+          <div class="col-md-12">
+            <div class="blog-service-profile-wrap d-flex gap-24">
+              <div data-aos="zoom-in">
+                <div class="about-blog-box info-box shadow-box h-full">
+                  <a href="./blog.html" class="overlay-link"></a>
+                  <img src="./assets/images/bg1.png" alt="BG" class="bg-img" />
+                  <img src="./assets/images/gfonts.png" alt="GFonts" />
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="infos">
+                      <h4>Blog</h4>
+                      <h1>GFonts</h1>
                     </div>
-                    <div class="wrapper">
-                        <div class="left">
-                            <div class="dodo_progress wow fadeInUp" data-wow-duration="1s"
-                                style="visibility: visible; animation-duration: 1s;">
 
-                                <div class="progress_inner" data-value="90" data-color="rgb(247, 80, 35)"><span><span
-                                            class="label opened">C++</span><span class="number"
-                                            style="right: 5%;">90%</span></span>
-                                    <div class="background">
-                                        <div class="bar open">
-                                            <div class="bar_in" style="width: 90%; background-color: rgb(247, 80, 35);">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="progress_inner" data-value="87" data-color="rgb(247, 80, 35)"><span><span
-                                            class="label opened">PHP</span><span class="number"
-                                            style="right: 5%;">87%</span></span>
-                                    <div class="background">
-                                        <div class="bar open">
-                                            <div class="bar_in" style="width: 87%; background-color: rgb(247, 80, 35);">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="progress_inner" data-value="80" data-color="rgb(247, 80, 35)"><span><span
-                                            class="label opened">JS</span><span class="number"
-                                            style="right: 5%;">80%</span></span>
-                                    <div class="background">
-                                        <div class="bar open">
-                                            <div class="bar_in" style="width: 80%; background-color: rgb(247, 80, 35);">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="progress_inner" data-value="85" data-color="rgb(28, 190, 89)"><span><span
-                                            class="label opened">C
-                                        </span><span class="number" style="right: 5%;">85%</span></span>
-                                    <div class="background">
-                                        <div class="bar open">
-                                            <div class="bar_in" style="width: 85%; background-color: rgb(28, 190, 89);">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="progress_inner" data-value="82" data-color="rgb(28, 190, 89)"><span><span
-                                            class="label opened">Java
-                                        </span><span class="number" style="right: 5%;">82%</span></span>
-                                    <div class="background">
-                                        <div class="bar open">
-                                            <div class="bar_in"
-                                                style="width: 82%; background-color: rgb(166, 28, 190);">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="progress_inner" data-value="90" data-color="rgb(28, 190, 89)"><span><span
-                                            class="label opened">Python
-                                        </span><span class="number" style="right: 5%;">90%</span></span>
-                                    <div class="background">
-                                        <div class="bar open">
-                                            <div class="bar_in" style="width: 90%; background-color: rgb(227, 57, 51);">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="progress_inner" data-value="95" data-color="rgb(28, 190, 89)"><span><span
-                                            class="label opened">MS Office
-                                        </span><span class="number" style="right: 5%;">95%</span></span>
-                                    <div class="background">
-                                        <div class="bar open">
-                                            <div class="bar_in" style="width: 95%; background-color: rgb(28, 190, 89);">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Done -->
-
-                        <div class="right" style="padding-left: 10px; padding-right: 10px;">
-                            <div class="images"><img src="./assets/images/bgm.png" alt="shape" class="shape">
-                                <img src="./assets/images/avatar.png" alt="image" class="avtr">
-                            </div>
-                            <div class="numbers problem">
-                                <div class="wrapper" style="width: fit-content;">
-                                    <h3 style="font-size: 45px; font-weight: 500;"><span class="count-text"
-                                            data-from="0" data-to="300">300+</span></h3><span
-                                        class="name">Problems<br>Solved</span>
-                                </div>
-                            </div>
-                            <div class="numbers project">
-                                <div class="wrapper">
-                                    <h3><span class="count-text" data-from="0" data-to="15">22</span>+</h3><span
-                                        class="name">Total<br>Projects</span>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
+                    <a href="./blog.html" class="about-btn">
+                      <img src="./assets/images/icon.svg" alt="Button" />
+                    </a>
+                  </div>
                 </div>
+              </div>
+
+              <div data-aos="zoom-in" class="flex-1">
+                <div class="about-services-box info-box shadow-box h-full">
+                  <a href="./service.html" class="overlay-link"></a>
+                  <img src="./assets/images/bg1.png" alt="BG" class="bg-img" />
+                  <div class="icon-boxes">
+                    <i class="iconoir-camera"></i>
+                    <i class="iconoir-design-pencil"></i>
+                    <i class="iconoir-color-filter"></i>
+                    <i class="iconoir-dev-mode-phone"></i>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="infos">
+                      <h4>specialization</h4>
+                      <h1>Services Offering</h1>
+                    </div>
+
+                    <a href="./service.html" class="about-btn">
+                      <img src="./assets/images/icon.svg" alt="Button" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div data-aos="zoom-in">
+                <div class="about-profile-box info-box shadow-box h-full">
+                  <img src="./assets/images/bg1.png" alt="BG" class="bg-img" />
+                  <div class="inner-profile-icons shadow-box">
+                    <a href="#">
+                      <i class="iconoir-dribbble"></i>
+                    </a>
+                    <a href="#">
+                      <i class="iconoir-twitter"></i>
+                    </a>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="infos">
+                      <h4>Stay with me</h4>
+                      <h1>Profiles</h1>
+                    </div>
+
+                    <a href="./contact.html" class="about-btn">
+                      <img src="./assets/images/icon.svg" alt="Button" />
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <!-- Done  -->
-            <div class="zion_section" id="contact">
-                <div class="zion_skills">
-                    <div class="container">
-                        <div class="zion_main_title" data-align="center"><span>Contact Me</span>
-                            <h3>I Want To Hear From You</h3>
-                            <p>Please fill out the form on this section to contact with me. Or call between 9:00 a.m.
-                                and 8:00 p.m. ET, Monday through Friday</p>
-                        </div>
-                        <div class="wrapper" style="padding-top: 20px;">
-                            <div class="left">
-                                <ul>
-                                    <li>
-                                        <div class="list_inner">
-                                            <div class="icon orangeBackground"><i class="fa fa-map-marker"></i>
-                                            </div>
-                                            <div class="short">
-                                                <h3>Address</h3><span>Dhaka, Bangladesh</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="list_inner">
-                                            <div class="icon greenBackground"><i class="fa fa-envelope"></i>
-                                            </div>
-                                            <div class="short">
-                                                <h3>Email</h3><span><a href="#">mezbazion@gmail.com</a></span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="list_inner">
-                                            <div class="icon purpleBackground"><i class="fa fa-phone"></i>
-                                            </div>
-                                            <div class="short">
-                                                <h3>Phone</h3><span>+8801750458479</span>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="right">
-                                <form action="#" method="post" class="contact_form" id="contact_form"
-                                    autocomplete="off">
-                                    <div class="input_list">
-                                        <ul style="padding-left: 10px;">
-                                            <li style="padding-right: 10px;"><input type="text" id="name"
-                                                    placeholder="Your Name"></li>
-                                            <li><input type="text" id="email" placeholder="Your Email"></li>
-                                            <li style="padding-right: 10px;"><input type="number" id="phone"
-                                                    placeholder="Your Phone"></li>
-                                            <li><input type="text" id="subject" placeholder="Subject"></li>
-                                        </ul>
-                                    </div>
-                                    <div class="message_area"><textarea id="message"
-                                            placeholder="Write your message here"></textarea></div>
-                                    <div class="zion_button" style="width: 200px;"><a id="send_message"
-                                            href="#"><span>Submit Now</span></a>
-                                    </div>
-                                </form>
-                            </div>
-
-                        </div>
-                        <div class="zion_map">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14594.21075523273!2d90.3277921!3d23.870012699999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8ada2664e21%3A0x3c872fd17bc11ddb!2sDaffodil%20International%20University!5e0!3m2!1sen!2sbd!4v1677512120789!5m2!1sen!2sbd"
-                                width="100%" height="450" style="border:0; border-radius: 22px;" allowfullscreen=""
-                                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
+          </div>
+        </div>
+        <!-- Blog Ends -->
+        <!-- Experience -->
+        <div class="row mt-24">
+          <div class="col-md-6" data-aos="zoom-in">
+            <div class="about-client-box info-box shadow-box">
+              <img src="./assets/images/bg1.png" alt="BG" class="bg-img" />
+              <div class="clients d-flex align-items-start gap-24 justify-content-center">
+                <div class="client-item">
+                  <h1>01</h1>
+                  <p>Years <br />Experience</p>
                 </div>
 
-                <!-- Progressbar -->
-                <div class="progressbar animate"><a href="#home" id="scroll-top" class="active"><span class="text"
-                            style="bottom:150.75px">To Top</span></a><span class="line"
-                        style="height: 4.16454%;"></span>
+                <div class="client-item">
+                  <h1>+5</h1>
+                  <p>CLIENTS <br />WORLDWIDE</p>
                 </div>
+
+                <div class="client-item">
+                  <h1>+50</h1>
+                  <p>Total <br />Projects</p>
+                </div>
+              </div>
             </div>
-            <!-- Site footer -->
-            <footer class="site-footer">
-                <div class="container">
-                    <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
-                        <a href="#">ZiON</a>.
-                    </p>
-                    <ul class="social-icons">
-                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a class="twitter" href="#"><i class="fa fa-github"></i></a></li>
-                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-                    </ul>
-            </footer>
+          </div>
+
+
+          <!-- Work Together -->
+          <div class="col-md-6" data-aos="zoom-in">
+            <div class="about-contact-box info-box shadow-box">
+              <a class="overlay-link" href="./contact.html"></a>
+              <img src="./assets/images/bg1.png" alt="BG" class="bg-img" />
+              <img src="./assets/images/icon2.png" alt="Icon" class="star-icon" />
+              <h1>Let's <br />work <span>together.</span></h1>
+              <a href="#" class="about-btn">
+                <img src="./assets/images/icon.svg" alt="Button" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-area">
+      <div class="container">
+        <div class="footer-content text-center">
+          <a href="./index.html" class="logo">
+            <img src="./assets/images/logo-2.svg" alt="Logo" />
+          </a>
+          <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <p class="copyright">
+            &copy; All rights reserved by <span>Md. Mezbaul Islam Zion</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./assets/js/jquery-3.6.4.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/aos.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
-
 
 </html>
